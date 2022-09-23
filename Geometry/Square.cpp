@@ -2,8 +2,7 @@
 
 Square::Square()
 {
-	std::cout << "Enter a: ";
-	std::cin >> this->a;
+	this->a = 0;
 }
 
 Square::Square(int a)
@@ -28,5 +27,5 @@ std::string Square::toString()
 		+ "\nArea formula: " + AreaFormula
 		+ "\na: " + std::to_string(a)
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
-		+ "\nShape area: " + std::to_string(this->calculateArea());
+		+ "\nShape area: " + std::to_string(this->calculateArea()) + "\n";
 }

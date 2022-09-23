@@ -2,14 +2,19 @@
 
 Rectangle::Rectangle()
 {
-	std::cout << "Enter b: ";
-	std::cin >> this->b;
+	this->b = 0;
+	this->name = "rectangle";
+	this-> perimeterFormula = "2a + 2b ";
+	this-> AreaFormula = "a * b";
 }
 
 Rectangle::Rectangle(int a, int b)
 {
 	this->a = a;
 	this->b = b;
+	this->name = "rectangle";
+	this->perimeterFormula = "2a + 2b ";
+	this->AreaFormula = "a * b";
 }
 
 double Rectangle::calculateArea()
@@ -30,5 +35,5 @@ std::string Rectangle::toString()
 		+ "\na: " + std::to_string(a)
 		+ "\nb: " + std::to_string(b)
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
-		+ "\nShape area: " + std::to_string(this->calculateArea());
+		+ "\nShape area: " + std::to_string(this->calculateArea()) + "\n";
 }

@@ -2,22 +2,15 @@
 
 Quadrangle::Quadrangle()
 {
-	std::cout << "Enter a: ";
-	std::cin >> this->a;
-	std::cout << "Enter b: ";
-	std::cin >> this->b;
-	std::cout << "Enter c: ";
-	std::cin >> this->c;
-	std::cout << "Enter d: ";
-	std::cin >> this->d;
 }
 
-Quadrangle::Quadrangle(int a, int b, int c, int d)
+Quadrangle::Quadrangle(int a, int b, int c, int d, int h)
 {
 	this->a = a;
 	this->b = b;
 	this->c = c;
 	this->d = d;
+	this->h = h;
 }
 
 double Quadrangle::calculateArea()
@@ -39,6 +32,7 @@ std::string Quadrangle::toString()
 		+ "\nb: " + std::to_string(b)
 		+ "\nc: " + std::to_string(c)
 		+ "\nd: " + std::to_string(d)
+		+ "\nh: " + std::to_string(h)
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
-		+ "\nShape area: " + std::to_string(this->calculateArea());
+		+ "\nShape area: " + std::to_string(this->calculateArea()) + "\n";
 }

@@ -2,7 +2,17 @@
 
 std::string Shape::toString()
 {
-    return name;
+    return name + "\n";
+}
+
+double Shape::calculateArea()
+{
+    return 0.0;
+}
+
+double Shape::calculatePerimeter()
+{
+    return 0.0;
 }
 
 void Shape::getPerimeterFormula()

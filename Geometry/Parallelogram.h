@@ -13,7 +13,6 @@ public:
 	Parallelogram();
 	Parallelogram(int a, int b, int h);
 	double calculateArea();
-	double calculatePerimeter();
 	std::string toString();
 };
 

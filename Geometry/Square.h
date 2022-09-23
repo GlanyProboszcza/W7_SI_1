@@ -5,7 +5,6 @@ class Square :
 {
 protected:
 	int a;
-
 	std::string name = "Square";
 	std::string perimeterFormula = "4 * a";
 	std::string AreaFormula = "a * a";

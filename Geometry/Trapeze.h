@@ -4,6 +4,7 @@
 class Trapeze :
     public Parallelogram
 {
+protected:
     int c;
     int d;
     std::string name = "Trapeze";

@@ -2,10 +2,9 @@
 
 Trapeze::Trapeze()
 {
-	std::cout << " Enter c: ";
-	std::cin >> this->c;
-	std::cout << " Enter d: ";
-	std::cin >> this->d;
+	this->c = 0;
+	this->d = 0;
+	this->h = 0;
 }
 
 Trapeze::Trapeze(int a, int b, int c, int d, int h)
@@ -15,7 +14,6 @@ Trapeze::Trapeze(int a, int b, int c, int d, int h)
 	this->c = c;
 	this->d = d;
 	this->h = h;
-
 }
 
 double Trapeze::calculateArea()
@@ -39,5 +37,5 @@ std::string Trapeze::toString()
 		+ "\nd: " + std::to_string(d)
 		+ "\nh: " + std::to_string(h)
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
-		+ "\nShape area: " + std::to_string(this->calculateArea());
+		+ "\nShape area: " + std::to_string(this->calculateArea()) + "\n";
 }

@@ -5,15 +5,14 @@
 class Shape
 {
 protected:
-	std::string name;
+	std::string name = "Unknown";
 	std::string perimeterFormula;
 	std::string AreaFormula;
 
 public:
-	std::string toString();
-	virtual double calculateArea() = 0;
-	virtual double calculatePerimeter() = 0;
-	void getPerimeterFormula();
-	void getAreaFormula();
+	virtual std::string toString();
+	virtual double calculateArea();
+	virtual double calculatePerimeter();
+	virtual void getPerimeterFormula();
+	virtual void getAreaFormula();
 };
-   

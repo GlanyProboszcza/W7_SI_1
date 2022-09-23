@@ -2,8 +2,6 @@
 
 Parallelogram::Parallelogram()
 {
-	std::cout << "Enter h: ";
-	std::cin >> this->h;
 }
 
 Parallelogram::Parallelogram(int a, int b, int h)
@@ -27,5 +25,5 @@ std::string Parallelogram::toString()
 		+ "\nb: " + std::to_string(b)
 		+ "\nh: " + std::to_string(h)
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
-		+ "\nShape area: " + std::to_string(this->calculateArea());
+		+ "\nShape area: " + std::to_string(this->calculateArea()) + "\n";
 }

@@ -2,13 +2,9 @@
 
 Triangle::Triangle()
 {
-	std::cout << "Enter a: ";
-	std::cin >> this->a;
-	std::cout << "Enter b: ";
-	std::cin >> this->b;
-	std::cout << "Enter c: ";
-	std::cin >> this->c;
-
+	this->a = 0;
+	this->b = 0;
+	this->c = 0;
 }
 
 Triangle::Triangle(int a, int b, int c)
@@ -40,5 +36,5 @@ std::string Triangle::toString()
 		+ "\nb: " + std::to_string(b)
 		+ "\nc: " + std::to_string(c) 
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter()) 
-		+ "\nShape area: " + std::to_string(this->calculateArea());
+		+ "\nShape area: " + std::to_string(this->calculateArea()) + "\n";
 }

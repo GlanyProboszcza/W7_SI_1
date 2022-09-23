@@ -42,6 +42,9 @@
     <ClCompile Include="Parallelogram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ShapesCollections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shape.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Parallelogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapesCollections.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

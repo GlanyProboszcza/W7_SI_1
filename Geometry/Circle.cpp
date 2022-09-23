@@ -2,22 +2,12 @@
 
 Circle::Circle()
 {
-	std::cout << "Enter r: ";
-	std::cin >> this->r;
+	this->r = 0;
 }
 
 Circle::Circle(int r)
 {
 	this->r = r;
-}
-
-std::string Circle::toString()
-{
-	
-	return "Shape: " + name + "\nPerimeter formula: " + perimeterFormula
-		+ "\nArea formula: " + AreaFormula + "\nr: " + std::to_string(r)+
-		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
-		+ "\nShape area: " + std::to_string(this->calculateArea());
 }
 
 double Circle::calculateArea()
@@ -28,4 +18,13 @@ double Circle::calculateArea()
 double Circle::calculatePerimeter()
 {
 	return 2 * pi * r;
+}
+
+std::string Circle::toString()
+{
+	
+	return "Shape: " + name + "\nPerimeter formula: " + perimeterFormula
+		+ "\nArea formula: " + AreaFormula + "\nr: " + std::to_string(r)+
+		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
+		+ "\nShape area: " + std::to_string(this->calculateArea())+ "\n";
 }
