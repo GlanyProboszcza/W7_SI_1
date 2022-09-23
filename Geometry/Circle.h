@@ -1,17 +1,19 @@
 #pragma once
 #include "shape.h"
+
 class Circle :
     public Shape
 {
 	const int pi = 3.14;
 	int r;
 	std::string name = "circle";
-	double area = pi * r * r;
-	double perimeter;
-	double calculateArea() = 0;
-	double calculatePerimeter() = 0;
-	std::string perimeterFormula;
-	std::string AreaFormula;
+	std::string perimeterFormula = "2 * pi * r";
+	std::string AreaFormula = "pi * r * r";
+
 public:
-	void toString() = 0;
+	Circle();
+	Circle(int r);
+	std::string toString();
+	double calculateArea();
+	double calculatePerimeter();
 };

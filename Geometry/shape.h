@@ -1,21 +1,19 @@
 #pragma once
-#include <iostream>
+#include "Library.h"
+
 
 class Shape
 {
 protected:
 	std::string name;
-	double area;
-	double perimeter;
-	virtual double calculateArea() = 0;
-	virtual double calculatePerimeter() = 0;
 	std::string perimeterFormula;
 	std::string AreaFormula;
 
 public:
-	virtual void toString() = 0;
-	double getPerimeter();
-	double getArea();
+	std::string toString();
+	virtual double calculateArea() = 0;
+	virtual double calculatePerimeter() = 0;
 	void getPerimeterFormula();
 	void getAreaFormula();
 };
+   

@@ -1,13 +1,8 @@
 #include "Shape.h"
 
-double Shape::getPerimeter()
+std::string Shape::toString()
 {
-    return perimeter;
-}
-
-double Shape::getArea()
-{
-    return area;
+    return name;
 }
 
 void Shape::getPerimeterFormula()

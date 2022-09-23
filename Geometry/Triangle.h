@@ -9,13 +9,14 @@ class Triangle :
 	int c;
 	int h;
 	std::string name = "triangle";
-	double area = a * h / 2;
-	double perimeter;
-	double calculateArea() = 0;
-	double calculatePerimeter() = 0;
 	std::string perimeterFormula;
 	std::string AreaFormula;
+
 public:
-	void toString() = 0;
+	Triangle();
+	Triangle(int a, int b, int c, int h);
+	double calculateArea();
+	double calculatePerimeter();
+	std::string toString();
 };
 
