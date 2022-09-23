@@ -1,34 +1,31 @@
-#include "Rectangle.h"
+#include "Parallelogram.h"
 
-Rectangle::Rectangle()
+Parallelogram::Parallelogram()
 {
-	std::cout << "Enter b: ";
-	std::cin >> this->b;
+	std::cout << "Enter h: ";
+	std::cin >> this->h;
 }
 
-Rectangle::Rectangle(int a, int b)
+Parallelogram::Parallelogram(int a, int b, int h)
 {
 	this->a = a;
 	this->b = b;
+	this->h = h;
 }
 
-double Rectangle::calculateArea()
+double Parallelogram::calculateArea()
 {
-	return a * b;
+	return a * h;
 }
 
-double Rectangle::calculatePerimeter()
-{
-	return 2 * a + 2 * b;
-}
-
-std::string Rectangle::toString()
+std::string Parallelogram::toString()
 {
 	return "Shape: " + name
 		+ "\nPerimeter formula: " + perimeterFormula
 		+ "\nArea formula: " + AreaFormula
 		+ "\na: " + std::to_string(a)
 		+ "\nb: " + std::to_string(b)
+		+ "\nh: " + std::to_string(h)
 		+ "\nShape perimeter: " + std::to_string(this->calculatePerimeter())
 		+ "\nShape area: " + std::to_string(this->calculateArea());
 }

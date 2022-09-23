@@ -3,7 +3,7 @@
 Circle::Circle()
 {
 	std::cout << "Enter r: ";
-	std::cin >> r;
+	std::cin >> this->r;
 }
 
 Circle::Circle(int r)

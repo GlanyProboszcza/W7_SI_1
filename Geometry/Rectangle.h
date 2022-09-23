@@ -1,19 +1,19 @@
 #pragma once
-#include "shape.h"
+#include "Square.h"
 
-//class Rectangle :
-//	public Shape
-//{
-//	int a;
-//	int b;
-//	std::string name = "rectangle";
-//	double area = a * b;
-//	double perimeter;
-//	double calculateArea() = 0;
-//	double calculatePerimeter() = 0;
-//	std::string perimeterFormula;
-//	std::string AreaFormula;
-//public:
-//	void toString() = 0;
-//
-//};
+class Rectangle :
+	public Square
+{
+protected:
+	int b;
+	std::string name = "rectangle";
+	std::string perimeterFormula = "2a + 2b ";
+	std::string AreaFormula = "a * b";
+
+public:
+	Rectangle();
+	Rectangle(int a, int b);
+	double calculateArea();
+	double calculatePerimeter();
+	std::string toString();
+};

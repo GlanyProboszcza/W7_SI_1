@@ -7,14 +7,13 @@ class Triangle :
 	int a;
 	int b;
 	int c;
-	int h;
 	std::string name = "triangle";
-	std::string perimeterFormula;
-	std::string AreaFormula;
+	std::string perimeterFormula = " a + b + c";
+	std::string AreaFormula = "Heron's Formula";
 
 public:
 	Triangle();
-	Triangle(int a, int b, int c, int h);
+	Triangle(int a, int b, int c);
 	double calculateArea();
 	double calculatePerimeter();
 	std::string toString();
