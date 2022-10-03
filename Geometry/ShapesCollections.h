@@ -4,12 +4,12 @@
 class ShapesCollections
 {
 private:
-	std::vector <Shape> kolekcja;
+	std::vector <Shape*> kolekcja;
 
 public:
-	void addShape(Shape obiekt);
+	void addShape(Shape& obiekt);
 	std::string getShapesTable();
-	Shape ShapegetLargestShapeByPerimeter();
-	Shape getLargestShapeByArea();
+	Shape& ShapegetLargestShapeByPerimeter();
+	Shape& getLargestShapeByArea();
 };
 

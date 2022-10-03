@@ -1,37 +1,37 @@
 #include "ShapesCollections.h"
 
-void ShapesCollections::addShape(Shape obiekt)
+void ShapesCollections::addShape(Shape& obiekt)
 {
-	kolekcja.push_back(obiekt);
+	kolekcja.push_back(&obiekt);
 }
 
 std::string ShapesCollections::getShapesTable()
 {
 	std::string temp = "";
 	for (auto& a : kolekcja) {
-		temp += a.toString();
-		std::cout <<"test" << a.toString();
+		temp += a->toString();
+		std::cout <<"test" << a->toString();
 	}
 
 	return temp;
 }
 
-Shape ShapesCollections::ShapegetLargestShapeByPerimeter()
+Shape& ShapesCollections::ShapegetLargestShapeByPerimeter()
 {
-	Shape helper = kolekcja[0];
+	Shape* helper = kolekcja[0];
 	for (auto a : kolekcja) {
-		if (helper.calculatePerimeter() < a.calculatePerimeter())
+		if (helper->calculatePerimeter() < a->calculatePerimeter())
 			helper = a;
 	}
-	return helper;
+	return *helper;
 }
 
-Shape ShapesCollections::getLargestShapeByArea()
+Shape& ShapesCollections::getLargestShapeByArea()
 {
-	Shape helper = kolekcja[0];
+	Shape* helper = kolekcja[0];
 	for (auto a : kolekcja) {
-		if (helper.calculateArea() < a.calculateArea())
+		if (helper->calculateArea() < a->calculateArea())
 			helper = a;
 	}
-	return helper;
+	return *helper;
 }
